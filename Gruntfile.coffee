@@ -3,7 +3,7 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON 'package.json'
 
         nodeunit:
-            all: ['src/*.test.js']
+            all: ['lib/*.test.js']
             options:
                 reporter: 'Nyan'
                 run: true
