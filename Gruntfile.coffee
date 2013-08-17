@@ -4,9 +4,6 @@ module.exports = (grunt) ->
 
         nodeunit:
             all: ['lib/*.test.js']
-            options:
-                reporter: 'Nyan'
-                run: true
 
     # for simple utility functions
     grunt.loadNpmTasks 'grunt-contrib-nodeunit'
