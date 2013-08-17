@@ -1,0 +1,22 @@
+{
+  "name": "mocha-latte",
+  "version": "0.0.0",
+  "description": "TODO",
+  "main": "tt.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/texastribune/mocha-latte.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/texastribune/mocha-latte/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  }
+}
