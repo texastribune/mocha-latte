@@ -9,4 +9,4 @@ var firstdefined = function () {
 };
 
 
-module.exports.firstdefined = firstdefined;
+module.exports = firstdefined;

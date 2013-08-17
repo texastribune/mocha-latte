@@ -1,6 +1,7 @@
-var firstdefined = require('./firstdefined').firstdefined;
+var firstdefined = require('./firstdefined');
 
-// get the top/right/bottom/left distances (assumes pixels)
+
+// get the top/right/bottom/left distances css style(assumes pixels)
 var distanceGuesser = function(distance) {
   var out;
   if (typeof distance === "number") {
@@ -28,4 +29,4 @@ var distanceGuesser = function(distance) {
 };
 
 
-module.exports.distanceGuesser = distanceGuesser;
+module.exports = distanceGuesser;

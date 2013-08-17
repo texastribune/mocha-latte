@@ -1,4 +1,4 @@
-var firstdefined = require('./firstdefined').firstdefined;
+var firstdefined = require('./firstdefined');
 
 exports['firstdefined'] = function(test) {
   test.equal(firstdefined(1, 2, 3), 1);

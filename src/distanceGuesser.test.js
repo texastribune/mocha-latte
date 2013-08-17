@@ -1,4 +1,4 @@
-var distanceGuesser = require('./distanceGuesser').distanceGuesser;
+var distanceGuesser = require('./distanceGuesser');
 
 
 // test if output == ref, but only for keys that exist in ref
