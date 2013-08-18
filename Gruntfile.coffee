@@ -5,6 +5,12 @@ module.exports = (grunt) ->
         nodeunit:
             all: ['lib/*.test.js']
 
+        mocha:
+            all: ['test/mocha.html']
+            options:
+                reporter: 'Nyan'
+                run: true
+
         browserify2:
             main:
                 entry: './lib/jquery.aura.js'
@@ -12,7 +18,8 @@ module.exports = (grunt) ->
 
     # for simple utility functions
     grunt.loadNpmTasks 'grunt-contrib-nodeunit'
+    grunt.loadNpmTasks 'grunt-mocha'
     grunt.loadNpmTasks 'grunt-browserify2'
 
-    grunt.registerTask 'test', ['nodeunit']
+    grunt.registerTask 'test', ['nodeunit', 'mocha']
     grunt.registerTask 'default', ['test', 'browserify2']

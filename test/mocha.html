@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- modeled after https://github.com/kmiyashiro/grunt-mocha/blob/master/example/test/test2.html -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/grunt-mocha/node_modules/mocha/mocha.css" />
+</head>
+<body>
+  <!-- Required for browser reporter -->
+  <div id="mocha"></div>
+
+  <!-- mocha -->
+  <script src="../node_modules/grunt-mocha/node_modules/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd')</script>
+
+  <!-- code to test -->
+  <script src="lib/jquery.min.js"></script>
+
+  <!-- tests -->
+  <script src="../lib/jquery.aura.mocha.js"></script>
+
+  <!-- run mocha -->
+  <script>
+    mocha
+      .run();
+  </script>
+</body>
+</html>
